@@ -1,0 +1,7 @@
+<p class="task">{{task.name}}</p>
+<button 
+  *ngIf="!task.isDone"
+  class="button" 
+  (click)="complete()"
+  >Complete</button>
+<button class="button button_red"(click)="delete()">Delete</button>
